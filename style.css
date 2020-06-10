@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    border-right: 2px solid rgb(58, 47, 47);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+}
+
+header {
+    background-color: rgb(17, 16, 16);
+    height: 100vh;
+}
+
+.menu a {
+    color: #f2f2f2;
+    padding: 20px 26px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: 'Slabo 27px', serif;
+    letter-spacing: 1px;
+}
+
+.menu a:hover {
+    background-color: rgb(75, 52, 52);
+}
+
+.menu .icon {
+    display: none;
+}
+
+#content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.box1 {
+    position: relative;
+    /* border: 2px solid yellow; */
+    float: left;
+    height: 73vh;
+    width: 35vw;
+    margin: 40px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 1s ease;
+}
+
+.box1:hover .overlay {
+    width: 100%;
+}
+
+.responsive {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    filter: invert();
+}
+
+.justplay {
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.box2 {
+    margin: 40px;
+    /* border: 2px solid yellow; */
+    float: right;
+    height: 73vh;
+    width: 35vw;
+    color: white;
+}
+
+.box2 h1 {
+    font-size: 7vw;
+    font-family: 'Metal Mania', cursive;
+    letter-spacing: 3px;
+}
+
+.box2 h1 span {
+    color: rgb(70, 226, 39);
+}
+
+.btn {
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: rgb(70, 226, 39);
+    font-weight: bold;
+    font-size: 1.2em;
+}
